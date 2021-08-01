@@ -7,13 +7,21 @@
   justify-content: space-around;
 
   &__link {
-    background: $link-creative;
+    $size_icon:unquote("clamp(36px, 3vw, 48px)");
+    //background: white;
     display: flex;
-    width: unquote("clamp(36px, 3vw, 48px)");
-    height: unquote("clamp(36px, 3vw, 48px)");
+    width: $size_icon;
+    height: $size_icon;
+
+    a{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
   }
 
   &__link--software {
-    background: $link-software;
+    //background: $link-software;
   }
 }

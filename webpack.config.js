@@ -33,10 +33,7 @@ module.exports = {
       filename: "index.html",
       title: "Enrique Nieto - Personal Website",
       meta: {
-        viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
-        
-        "theme-color": "#262030",
-        
+        viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",        
       },
     }),
     new MiniCssExtractPlugin(),

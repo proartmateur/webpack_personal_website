@@ -17,7 +17,7 @@
   }
   .v {
     //border: 1px solid pink;
-    font-size: unquote("clamp(30px, 2vw, 50px)");
+    font-size: unquote("clamp(14px, 2vw, 20px)");
     margin-right: 10px;
     margin-bottom: 0;
     padding: 0;
@@ -25,6 +25,6 @@
 
   .num {
     //border: 1px dotted red;
-    font-size: unquote("clamp(40px, 3vw, 60px)");
+    font-size: unquote("clamp(16px, 3vw, 22px)");
   }
 }

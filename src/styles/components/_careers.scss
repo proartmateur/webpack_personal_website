@@ -8,7 +8,7 @@
 
   &__title {
     //border: 1px dotted tomato;
-    
+
     display: flex;
     width: 50%;
     height: 96px;
@@ -20,20 +20,34 @@
 
     align-items: center;
     justify-content: center;
-    
+
     a {
       text-align: center;
       text-decoration: none;
       color: $creative-text-color;
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        transition: all 0.3s ease-in-out;
+        text-shadow:
+      0 0 10px rgba(247, 207, 225, 1),
+      0 0 30px rgba(247, 207, 225, .8),
+      
+      }
     }
   }
 
   &__title--software {
     font-family: $software-font;
-    font-size: unquote("clamp(33px, 3vw, 80px)");
-    
+    font-size: unquote("clamp(16px, 2vw, 24px)");
+
     a {
       color: $software-text-color;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0 0 10px rgba(246, 194, 130, 1),
+          0 0 30px rgba(246, 194, 130, 0.8);
+      }
     }
   }
 }

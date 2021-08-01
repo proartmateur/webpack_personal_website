@@ -1,0 +1,11 @@
+{
+    "connector": {
+        "name": "connectorName"
+    },
+    "formatters": ["formatterName"],
+    "parsers": ["parserName"],
+    "hints": {
+        "meta-theme-color": "error"
+    },
+    "hintsTimeout": 120000
+}

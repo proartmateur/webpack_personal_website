@@ -1,15 +1,62 @@
 @mixin bg-two-color {
+  $from: 50%;
+  $to: 50%;
   background: $uv-33-19;
   background: -moz-linear-gradient(
     90deg,
-    $uv-33-19 50%,
-    rgba(255, 255, 255, 1) 50%
+    $uv-33-19 $from,
+    rgba(255, 255, 255, 1) $to
   );
   background: -webkit-linear-gradient(
     90deg,
-    $uv-33-19 50%,
-    rgba(255, 255, 255, 1) 50%
+    $uv-33-19 $from,
+    rgba(255, 255, 255, 1) $to
   );
-  background: linear-gradient(90deg, $uv-33-19 50%, rgba(255, 255, 255, 1) 50%);
+  background: linear-gradient(90deg, $uv-33-19 $from, rgba(255, 255, 255, 1) $to);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b174d",endColorstr="#ffffff",GradientType=1);
+}
+
+@mixin bg-two-color2 {
+  $from: 70%;
+  $to: 30%;
+  background: $uv-33-19;
+  background: -moz-linear-gradient(
+    90deg,
+    $uv-33-19 $from,
+    rgba(255, 255, 255, 1) $to
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    $uv-33-19 $from,
+    rgba(255, 255, 255, 1) $to
+  );
+  background: linear-gradient(90deg, $uv-33-19 $from, rgba(255, 255, 255, 1) $to);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b174d",endColorstr="#ffffff",GradientType=1);
+}
+
+
+@mixin gradientAnimation( $start, $end, $transTime ){
+  background-size: 100%;
+  $start: 50%;
+  $end:50%;
+  background-image: linear-gradient(90deg, $uv-33-19 $start, white $end);
+  /*position: relative;
+  z-index: -100;*/
+  &:before {
+      background-image: linear-gradient(90deg,$uv-33-19 $start + 10, white $end - 10);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+      transition: opacity $transTime;
+  }
+  &:hover {
+      &:before {
+          opacity: 1;
+      }
+  }
 }

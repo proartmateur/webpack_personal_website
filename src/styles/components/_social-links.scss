@@ -1,0 +1,19 @@
+.social-links {
+  //border: 1px solid green;
+  display: flex;
+  width: unquote("clamp(290px, 30vw, 520px)");
+  height: 48px;
+  align-items: center;
+  justify-content: space-around;
+
+  &__link {
+    background: $link-creative;
+    display: flex;
+    width: unquote("clamp(36px, 3vw, 48px)");
+    height: unquote("clamp(36px, 3vw, 48px)");
+  }
+
+  &__link--software {
+    background: $link-software;
+  }
+}

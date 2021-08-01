@@ -1,0 +1,39 @@
+.careers {
+  //border: 1px dotted pink;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    //border: 1px dotted tomato;
+    
+    display: flex;
+    width: 50%;
+    height: 96px;
+
+    cursor: pointer;
+
+    font-size: unquote("clamp(24px, 2vw, 70px)");
+    font-family: $creative-font;
+
+    align-items: center;
+    justify-content: center;
+    
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: $creative-text-color;
+    }
+  }
+
+  &__title--software {
+    font-family: $software-font;
+    font-size: unquote("clamp(33px, 3vw, 80px)");
+    
+    a {
+      color: $software-text-color;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.version-label {
+  //border: 1px solid green;
+
+  display: flex;
+  font-family: $software-font;
+  font-size: unquote("clamp(24px, 2vw, 50px)");
+  color: $version-color;
+  mix-blend-mode: exclusion;
+  align-items: flex-end;
+  justify-content: center;
+  span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    line-height: 30px;
+  }
+  .v {
+    //border: 1px solid pink;
+    font-size: unquote("clamp(30px, 2vw, 50px)");
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .num {
+    //border: 1px dotted red;
+    font-size: unquote("clamp(40px, 3vw, 60px)");
+  }
+}

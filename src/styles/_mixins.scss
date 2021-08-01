@@ -1,0 +1,15 @@
+@mixin bg-two-color {
+  background: $uv-33-19;
+  background: -moz-linear-gradient(
+    90deg,
+    $uv-33-19 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    $uv-33-19 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  background: linear-gradient(90deg, $uv-33-19 50%, rgba(255, 255, 255, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b174d",endColorstr="#ffffff",GradientType=1);
+}
